@@ -23,6 +23,10 @@ mongoose.connect(db, {useNewUrlParser: true})
 app.use(layouts)
 app.set('view engine','ejs')
 
+//css
+app.use('/public', express.static('public'));
+
+
 //Bodyparser
 app.use(express.urlencoded({extended: false}))
 

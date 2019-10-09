@@ -2,7 +2,11 @@ const express = require('express')
 const router = express.Router()
 const bcrypt = require('bcryptjs')
 const passport = require('passport')
-
+const async = require('async')
+const crypto = require('crypto')
+const nodemailer = require('nodemailer')
+const randomstring = require('randomstring')
+const joi = require('joi')
 //intern user model 
 const IUser = require('../models/userIntern')
 router.get('/login', (req, res) => res.render('login'))
@@ -11,15 +15,19 @@ router.get('/register', (req, res) => res.render('internRegister'))
 
 //router.get('/Register/M', (req, res) => res.send('register'))
 
+
+
+
+
 //Register Handle
 
 router.post('/register', (req, res) => {
-    const {firstName,lastName, email, password, password2} = req.body;
+   const {firstName,lastName, email, password, password2, userName, phone} = req.body;
     let errors = []
     var Regex = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");
     //check required fields
 
-    if(!firstName || !lastName || !email || !password || !password2){
+    if(!firstName || !lastName || !email || !password || !password2 || !userName || !phone){
         errors.push({msg: 'please fill all fields'})
     }
 
@@ -32,9 +40,10 @@ router.post('/register', (req, res) => {
     if(password.length < 6){
         errors.push({msg: 'Passwords should be at least 6 characters'})
     }
-   /*if (password.value !== Regex){
+ /*  if (password.value !== Regex){
         errors.push({msg: 'Password Weak'})
     }*/
+    
 
     if(errors.length > 0){
         res.render('internRegister', {
@@ -60,13 +69,19 @@ router.post('/register', (req, res) => {
                         password,
                         password2
                     })
-                }else {
+                }
+                else {
                     const newIUser = new IUser({
                         firstName,
                         lastName,
                         email,
-                        password
+                        password,
+                        userName,
+                        phone
                     })
+                    //
+                    
+
                    //encrypt password
                    bcrypt.genSalt(10, (err, salt)=>
                         bcrypt.hash(newIUser.password, salt, (err, hash)=>{
@@ -76,7 +91,7 @@ router.post('/register', (req, res) => {
                             //save user
                             newIUser.save()
                             .then(user => {
-                                req.flash('success_msg', 'You are now registered')
+                                req.flash('success_msg', 'You can now log in')
                                 res.redirect('/users/login')
                             })
                             .catch(err => console.log(err))
@@ -85,8 +100,10 @@ router.post('/register', (req, res) => {
             })
             .catch()
     }
-
 })
+
+
+
 
 //Login handle
 router.post('/login', (req, res, next )=> {
