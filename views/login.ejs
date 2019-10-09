@@ -1,0 +1,11 @@
+<div class="col-md-8 col-sm-10 col-lg-6 m-5" id="form-container">
+    <form action="/users/login"METHOD="POST" class="form-group">
+      <span><h2>Login</h2></span>
+      <% include ./partials/messages %>
+        <input type="Email" id="email" name="email" class="form-control my-3 p-2.5" placeholder="Email Address" name="email" required autofocus>
+        <input type="password" id="password" name="password" class="form-control mb-2 " placeholder="Password" name="password" required>
+        <a href="" class="text-decoration-none">Forgot Password?</a>
+        <button  type="submit" class="btn color-white text-align-center font-weight-bold form-control my-2">Login to your account</button>
+        <span class="text-align-center"> <p> Don't have an a Red Wings account? <a href="/users/register" class="text-decoration-none">Sign up</a> </p> </span>
+    </form>
+</div>
