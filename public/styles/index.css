@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,700,900&display=swap");
+
+body {
+    background: #fff
+}
+
+.action-btn {
+    border: 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    border: 1px solid #ecebeb;
+    border-radius: 5px;
+}
+
+.action-btn small {
+    color: #323232;
+}
+
+.action-btn:hover {
+    background-color: #f3f1f1;
+}
+
+h4 {
+    color: #3073D7;
+    line-height: 35px;
+    font-family: "PT Serif", sans-serif
+}
+
+img {
+    max-width: 100%;
+}

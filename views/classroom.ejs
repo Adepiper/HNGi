@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Classroom</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!--Font Awsome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Open Sans Font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!--Fugaz One Font-->
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
+
+    <!--Customized CSS-->
+    <link rel="stylesheet" href="../public/classroom.css">
+</head>
+<body>
+<div class="main__wrapper container-fluid">
+    <div class="row">
+        <div class="col-md-2 sideBar">
+                <div class="logo">
+                    <img src="https://res.cloudinary.com/dt6adjgra/image/upload/c_scale,h_34/v1570621287/My%20Images/brand-logo_mle1jk.png" class="text-light">
+                </div>
+                <img src="/assets/profile1.png" class="img-fluid profile-img" alt="">
+                <h6><%= name %></h6>
+                <hr />
+                <div class="link__section mt-3">
+                    <ul>
+                        <li><a href="/intern/dashboard"><i class="fa fa-home"></i>&nbsp;&nbsp; Dashboard</a></li><hr />
+                        <li><a href=""><i class="fa fa-book"></i>&nbsp;&nbsp; Profile</a></li><hr />
+                        <li><a href="/classroom"><i class="fa fa-user-plus"></i>&nbsp;&nbsp; Classroom</a></li><hr />
+                        <li><a href="/users/logout"><i class="fa fa-sign-out"></i>&nbsp;&nbsp; Logout</a></li><hr />
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10 rightSection">
+                <i class="fa fa-bars toggler"></i>
+                <h4 class="pb-1">OVERVIEW</h4>
+                <div class="top__bar d-flex justify-content-between">
+                    <div class="top__bar--left">
+                        <small>Task due for submission in 2 days, on October 11th, 2019</small>
+                    </div>
+                    <div class="top__bar--right">
+                        <small>0 Passed</small>
+                    </div><br />
+                </div><br />
+                <div class="main__content">
+                    <p>You will be grouped into 2 groups, your task is to come up with a solution that:</p>
+            
+                    <p>1. Help us manage the internship better.</p>
+                    <p>2. Help us grade people faster.</p>
+                    <p>3. Makes sure we have a full database of the interns</p>
+                    <h5>You are to:</h5>
+                    <p>1. Come up with a plan and implement it.</p>
+                    <p>You also need to consider the following:</p>
+                    <p>- the internship needs to reach more areas like the northen part of nigeria and other areas<br>that have little to no tech presence.</p>
+                    <p>your solution should seek to solve this problem.</p>
+                    <p>2. your project managers are @seunfunmi - PM + @ponyeador - PM </p>
+                    <p>They will create pivotal tracker accounts and manage your projects from there</p>
+                    <p>You will be assigned points based on your activities throughout, the project managers will<br> work hand in hand with the team lead to ensure this is done properly.</p>
+                    <p>There will be no excuse or nepa or other things like that.<br>
+                    If you pass, you will be promoted to stage 6 alongside those presently in stage 5.</p>
+                    <p>Don't hold back, work towards impressing and getting more points.</p>
+                    <p>Be at the fore-front in the channel, because even if project managers claim you did something,<br> and your team lead said you did it,</p>
+                    <p>If I don't see you active in the channel, I won't approve your promotion.</p>
+                    <p>Good luck, you have till Friday, 7pm.</p>
+                    <h6>TO SUBMIT, ENTER THE URL TO YOUR LIVE APP AND CLICK SUBMIT</h6>
+                    <form action="" class="d-flex justify-content-between">
+                        <input type="text" class="form-control mt-2" placeholder="LIVE APP URL">
+                        <button type="submit" name="submit" class="button mt-2">SUBMIT &nbsp;TASK</button>
+                    </form>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+    <!--Customized Javascript-->
+    <script src="../public/js/toggle.js"></script>
+
+    <!--Bootstrap Javascript-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

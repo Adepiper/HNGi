@@ -1,0 +1,140 @@
+/*Reset CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans' !important;
+    overflow-x:hidden;
+    line-height: 1.6;
+    height: 100% !important;
+}
+.main__wrapper{
+    height: 100vh;
+}
+.sideBar{
+    background: #BCE6EC;
+    color: #fff;
+    font-size: .9rem;
+    padding: 2.5rem 0;
+    height: 100vh !important;
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+.profile-img{
+    border-radius: 50%;
+    max-width: 100px;
+    height: auto;
+    margin-top: 1rem;
+}
+.sideBar h6{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+hr{
+    background: #fff;
+    opacity: .8;
+}
+ul{
+    text-align: left !important;
+    list-style: none;
+    text-decoration: none !important;
+}
+ul li a{
+    padding-left: 2rem;
+    color:#333;
+}
+ul li a:hover{
+    text-decoration: none !important;
+    color:#fafafa;
+    transition: all ease-in-out .5;
+}
+/*Right section styles*/
+.rightSection{
+    background: #fafafa;
+    position: absolute;
+    width: 100vw !important;
+    right: 0 !important;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+}
+.toggler{
+    display: none;
+}
+.top__bar{
+    background: #fff;
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,.15);
+    padding: 1rem 1rem;
+    color: #627081;
+    font-weight: bold !important;
+}
+.rightSection h4{
+    color: #343434;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 2rem;
+}
+.main__content p{
+    font-size: .9rem;
+    color: #343434;
+}
+form{
+    max-width: 550px;
+}
+form input{
+    width: 70% !important;
+    border-radius: 0 !important;
+    height: 3rem !important;
+    font-size: .9rem !important;
+    box-shadow: none !important;
+}
+form .button{
+    padding: .5rem 2rem;
+    text-align:center;
+    border:none;
+    font-size: .7rem;
+    background: #3487FE;
+    color: #fff;
+    font-weight: bold;
+}
+.rightSection h6{
+    font-family: 'Fugaz One' !important;
+    color: #343434;
+    font-weight: bold;
+}
+/*MEDIA  QUERIES*/
+@media screen and (max-width: 1200px){
+    .sideBar{
+        position: absolute;
+        left: -400px !important;
+        height:100vh !important;
+        width: 60%;
+    }
+    .toggler{
+        display: block !important;
+        margin-top: 3rem;
+        cursor: pointer;
+        text-align: right;
+    }
+    .rightSection{
+        position: absolute;
+        left:0;
+        width: 100% !important;
+        min-width: 100% !important;
+        transition: all ease-in .5s;
+    }
+    .show-bar{
+        left: 0 !important
+    }
+    .rightSection h4{
+        padding-top: 0px !important;
+    }
+}
+
+
+
+
+

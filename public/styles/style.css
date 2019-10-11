@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+h1 {
+    line-height: 1.5;
+}
+
+.form {
+    width: 90%;
+    max-width: 360px;
+    margin: 6rem auto;
+    text-align: center;
+    box-shadow: 0 2px 5px 0px #aaa;
+    padding: 3rem 1.5rem;
+}
+
+.form label {
+    display: block;
+}
+
+.form input {
+    line-height: 36px;
+    margin-bottom: 24px;
+    width: 100%;
+    border: 1px solid slateblue;
+    border-radius: 36px;
+    padding: 0 1rem;
+}
+
+.submit-form {
+    background: slateblue;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 40px !important;
+}
+
+.two-col {
+    display: inline-block !important;
+    width: 49%;
+}

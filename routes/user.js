@@ -13,6 +13,7 @@ router.get('/login', (req, res) => res.render('login'))
 
 router.get('/register', (req, res) => res.render('internRegister'))
 
+
 //router.get('/Register/M', (req, res) => res.send('register'))
 
 

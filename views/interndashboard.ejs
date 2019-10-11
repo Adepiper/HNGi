@@ -7,20 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Intern Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../public/dashboard.css">
+    <link rel="stylesheet" href="../public/styles/dashboard.css">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
 </head>
-
 <body class="pr-0">
 
     <!--Navbar functioning as Sidebar on mobile-->
 
     <div class="sidebar">
         <nav class="navbar navbar-expand-md navbar-light bg-white py-2 py-md-0 border">
-            <a class="nav-link" href="#">
-                <img src="images/logo.png" class="logo" alt="HNG logo">
+            <a class="nav-link" href="/">
+                <img src="../public/images/logo.png" class="logo" alt="HNG logo">
                 <small class="font-weight-bold">
                     HNG MANAGER
                 </small>
@@ -39,25 +38,25 @@
                     <span class="fa fa-user fa-3x"></span>
                 </div>
                 <div class="dropdown pl-3 mt-2">
-                    <span class="font-weight-bold"><%= userName %></span>
-                    <button class="btn dropdown-btn dropdown-toggle ml-5" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="font-weight-bold">Username</span>
+                    <!-- <button class="btn dropdown-btn dropdown-toggle ml-5" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                    </div> -->
                 </div>
                 <ul class="navbar-nav mt-2 pt-1 pt-md-5 pt-md-0 px-0">
                     <li class="nav-item my-2">
-                        <a class="nav-link dash font-weight-bold pl-3" href="#"><span class="fa fa-box pr-4"></span> Dashboard</a>
+                        <a class="nav-link dash font-weight-bold pl-3" href="/intern/dashboard"><span class="fa fa-box pr-4"></span> Dashboard</a>
                     </li>
                     <li class="nav-item my-2">
-                        <a class="nav-link font-weight-bold pl-3" href="#"><span class="fa fa-warehouse pr-4"></span> Classroom</a>
+                        <a class="nav-link font-weight-bold pl-3" href="/classroom"><span class="fa fa-warehouse pr-4"></span> Classroom</a>
                     </li>
-                    <li class="nav-item my-2">
+                    <!-- <li class="nav-item my-2">
                         <a class="nav-link font-weight-bold pl-3" href="#"><span class="fa fa-cog pr-4"></span> Settings</a>
-                    </li>
+                    </li> -->
 
                 </ul>
 
@@ -73,14 +72,18 @@
                 <ul class="nav d-flex align-items-center px-5 py-2">
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <img src="" class="logo" alt="HNG logo">
+                            <img src="../public/images/logo.png" class="logo" alt="HNG logo">
                             <small class="font-weight-bold">
-                                HNG MANAGER
+                                HNG NANAGER
                             </small>
                         </a>
                     </li>
                     <li class="nav-item ml-auto">
-                        <a href="/users/logout" class="btn btn-primary btn-block mb-2 mr-3">logout</a>
+                        <a class="nav-link btn-sm btn-sky text-uppercase py-1" href="/users/logout">
+                            <small class=" font-weight-bold">
+                                Logout
+                            </small>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -97,24 +100,24 @@
                 </div>
                 <div class="dropdown pl-3 mt-2">
                     <span class="font-weight-bold">Username</span>
-                    <button class="btn dropdown-btn dropdown-toggle ml-5" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <!-- <button class="btn dropdown-btn dropdown-toggle ml-5" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                    </div> -->
                 </div>
                 <ul class="navbar-nav mt-2 pt-5 pt-md-0 px-0">
                     <li class="nav-item my-2">
-                        <a class="nav-link dash font-weight-bold pl-3" href="#"><span class="fa fa-box pr-4"></span> Dashboard</a>
+                        <a class="nav-link dash font-weight-bold pl-3" href="/intern/dashboard"><span class="fa fa-box pr-4"></span> Dashboard</a>
                     </li>
                     <li class="nav-item my-2">
-                        <a class="nav-link font-weight-bold pl-3" href="#"><span class="fa fa-warehouse pr-4"></span> Classroom</a>
+                        <a class="nav-link font-weight-bold pl-3" href="/classroom"><span class="fa fa-warehouse pr-4"></span> Classroom</a>
                     </li>
-                    <li class="nav-item my-2">
+                    <!-- <li class="nav-item my-2">
                         <a class="nav-link font-weight-bold pl-3" href="#"><span class="fa fa-cog pr-4"></span> Settings</a>
-                    </li>
+                    </li> -->
 
                 </ul>
             </div>

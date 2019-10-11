@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/public/index.css">
-    
+    <link rel="stylesheet" href="../public/styles/index.css">
     <meta name="Author" content="Elgiva Stephen." />
     <meta name="robots" content="index,follow">
     <meta http-equiv="content-type" content="text/html charset=UTF-8" />
@@ -16,6 +16,51 @@
     <title>Sign up</title>
   </head>
   <body>
+      <nav class="navbar navbar-expand-md navbar-light bg-white py-1 px-2 border">
+          <a class="nav-link" href="/">
+              <img src="../public/images/logo.png" class="logo" alt="HNG logo" width="30px">
+              <small class="font-weight-bold">
+                      HNG MANAGER
+                  </small>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="fa fa-bars"></span>
+              </button>
+  ​
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="/users/login">
+                          <button class="action-btn px-4">
+                              <small class="text-uppercase font-weight-bold">login</small>
+                          </button>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/about">
+                          <button class="action-btn px-4">
+                              <small class="text-uppercase font-weight-bold">about</small>
+                         </button>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/faq">
+                          <button class="action-btn px-4">
+                              <small class="text-uppercase font-weight-bold">faq</small>
+                          </button>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://hng.tech/">
+                          <button class="btn btn-primary btn-sm px-4 text-uppercase font-weight-bold">
+                             hng.tech
+                          </button>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+
    <div class="container">
     <div class="col-md-8 col-sm-10 col-lg-6 m-5" id="form-container">
       <form action="/users/login"METHOD="POST" class="form-group form" >

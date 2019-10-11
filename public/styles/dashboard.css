@@ -1,0 +1,169 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1rem;
+}
+
+.border-radius {
+    border-radius: 5px;
+}
+
+
+/*Navbar*/
+
+.logo {
+    height: 35px;
+}
+
+.sidebar {
+    display: none;
+}
+
+.nav-bar {
+    background-color: #D9D9D9;
+}
+
+.btn-sky,
+.btn-sky:focus {
+    background: #E3F2FD;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border: 0;
+    outline: none;
+    color: #2196F3;
+}
+
+.btn-sky small {
+    color: #2196F3;
+}
+
+.btn-sky:hover {
+    background: #d9eaf5;
+    cursor: pointer;
+}
+
+
+/*Sidebar*/
+
+.user-avatar {
+    height: 80px;
+    width: 80px;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.dropdown-btn,
+.dropdown-btn:focus {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+}
+
+.dropdown:focus {
+    border: 0;
+}
+
+.nav-link {
+    color: #323232;
+}
+
+.dash {
+    color: #2196F3;
+    background-color: #E3F2FD;
+    border-radius: 4px;
+}
+
+
+/*Topbar*/
+
+.topbar {
+    border-radius: 5px;
+    color: #9E9E9E;
+    background-color: #fff;
+}
+
+.topbar p {
+    font-size: 1.5rem;
+}
+
+
+/*Dashboard*/
+
+.dashboard {
+    background-color: #f8f5f5;
+}
+
+td {
+    line-height: 15px;
+}
+
+.form--control,
+.form--control:focus {
+    width: 50%;
+    border-radius: 20px;
+    border: 1px solid rgb(178, 180, 182);
+    height: 40px;
+    outline: none;
+}
+
+@media screen and (max-width: 767.98px) {
+    body {
+        font-size: 10px
+    }
+    .sidebar {
+        display: block;
+    }
+    .nav-bar {
+        display: none;
+    }
+    .desktop--sidebar {
+        display: none;
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 55%;
+        height: 100%;
+        background-color: #fff;
+        border-right: 1px solid #dbd8d8;
+        z-index: 2000;
+    }
+    .navbar-collapse.collapsing {
+        height: 100%;
+        -webkit-transition: left 0.3s ease;
+        -o-transition: left 0.3s ease;
+        -moz-transition: left 0.3s ease;
+        transition: left 0.3s ease;
+        left: -100%;
+        display: none;
+    }
+    .navbar-collapse.show {
+        left: 0;
+        -webkit-transition: left 0.3s ease-in;
+        -o-transition: left 0.3s ease-in;
+        -moz-transition: left 0.3s ease-in;
+        transition: left 0.3s ease-in;
+    }
+    .topbar p {
+        font-size: 1rem;
+    }
+    .topbar small {
+        line-height: 20px;
+        font-size: .7rem;
+    }
+}
