@@ -1,0 +1,266 @@
+@charset "utf-8";
+@viewport {
+    width: device-width;
+}
+
+
+/*
+Author:   
+Title:    CSS Document
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+p,
+table,
+tr,
+td,
+span,
+strong,
+label,
+input,
+select,
+section,
+div,
+header,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+a img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+table td {
+    vertical-align: top;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/*div, section, p, {
+  box-sizing: content-box;
+}
+*/
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto 0 auto;
+    font: 100% Helvetica, sans-serif;
+    background-color: #F7F7F7;
+}
+
+.navBar {
+    border: 1px solid #2196f3;
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.navBarCont {
+    width: 100%;
+    margin: 5px 0 25px 15px;
+}
+
+.navBarCont img {
+    width: 120px;
+    height: 60px;
+}
+
+.navBarCont1 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.navBarCont1 img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.userName {
+    margin-top: 10px;
+    margin-bottom: 35px;
+    font-size: 15px;
+}
+
+.navBarCont3 button {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navBarCont3 button {
+    border: none;
+    background-color: transparent;
+    color: #000;
+    margin-bottom: 15px;
+    margin-left: 2px;
+    font-size: 17px;
+}
+
+.navBarCont3 button:hover {
+    color: #2196f3;
+}
+
+.taskBar {
+    float: left;
+    width: 80%;
+    height: 100%;
+}
+
+.taskBarContainer {
+    width: 80%;
+    margin: 0 auto;
+    height: 50%;
+}
+
+.taskBarCont:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.taskBarCont {
+    width: 100%;
+    padding: 15px 15px 15px 0;
+    margin: 15px 0 20px 0;
+}
+
+.taskBarCont p {
+    font-size: 14px;
+}
+
+.taskBarCont div {
+    border: 1px solid #2196f3;
+    float: left;
+    background-color: white;
+    width: 32%;
+    padding: 35px;
+    font-size: 14px;
+    text-align: center;
+    display: inline;
+    margin-right: 15px;
+}
+
+.taskBarCont1 {
+    margin: 20px 0 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.taskBarIn {
+    margin-top: 15px;
+}
+
+.taskBarCont1 input {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #2196f3;
+    background-color: none;
+    color: #000000;
+    font-size: 15px;
+}
+
+.taskBarButt {
+    margin-top: 15px;
+}
+
+.taskBarButt button {
+    width: 20%;
+    padding: 8px;
+    background-color: #2196f3;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.taskPopulate {
+    border: 1px solid #2196f3;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+
+/************* style display for screen not more than 509px and min of 300px     Breakpoint 4  ******/
+
+@media (min-width: 200px) and (max-width:550px) {
+    .navBar {
+        width: 30%;
+    }
+    .taskBar {
+        width: 70%;
+    }
+    .taskBarCont div {
+        width: 30%;
+        height: 50px;
+        padding: 20px 20px 20px 5px;
+        margin-right: 7px;
+        font-size: 8px;
+    }
+    .taskBarCont p {
+        font-size: 10px;
+    }
+    .navBarCont {
+        margin: 5px 0 20px 8px;
+    }
+    .navBarCont img {
+        width: 70px;
+        height: 30px;
+    }
+    .navBarCont1 img {
+        width: 60px;
+        height: 60px;
+    }
+    .userName {
+        margin-top: 10px;
+        margin-bottom: 35px;
+        font-size: 10px;
+    }
+    .navBarCont3 button {
+        margin-bottom: 13px;
+        font-size: 13px;
+    }
+    .taskBarCont1 input {
+        width: 100%;
+        padding: 8px;
+        background-color: none;
+        color: #ccc;
+        font-size: 15px;
+    }
+    .taskBarButt button {
+        width: 70%;
+        padding: 7px;
+        font-size: 15px;
+    }
+}

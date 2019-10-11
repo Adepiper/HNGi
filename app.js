@@ -20,8 +20,10 @@ mongoose.connect(db, {useNewUrlParser: true})
     .catch(err => console.log(err))
 
 //Ejs
-app.use(layouts)
+
 app.set('view engine','ejs')
+
+
 
 //css
 app.use('/public', express.static('public'));

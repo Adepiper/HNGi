@@ -6,7 +6,8 @@ const {ensureAuthenticated} = require('../config/auth')
 router.get('/', (req, res) => res.render('welcome'))
 
 //dashboard
-router.get('/intern/dashboard', ensureAuthenticated, (req, res)=> res.render('internDashboard'))
+router.get('/intern/dashboard',  (req, res)=> res.render('internDashboard', {
+                userName: req.user.userName}))
 router.get('/mentor/dashboard', (req, res) => res.render('mentorDashboard'))
 
 
